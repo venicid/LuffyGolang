@@ -1,28 +1,36 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
 func main() {
 
-	ss := []string{
-		"A",
-		"说",
-		"我要",
-		"升职加薪",
+	var arr [5]*int
+
+	// 根据索引赋值
+	arr[0] = new(int)
+	arr[1] = new(int)
+	//arr[1] = new(int)  // <nil>   panic: runtime error: invalid memory address or nil pointer dereference
+	arr[2] = new(int)
+	arr[3] = new(int)
+	arr[4] = new(int)
+
+	fmt.Println(arr)
+
+	*arr[0] = 10
+	*arr[1] = 2
+	fmt.Println(arr)
+	for i:=0; i<len(arr); i++{
+		fmt.Printf("[索引：%d 值是:%d]\n", i, *arr[i])
 	}
 
-	var b strings.Builder
-	for _,s := range ss{
-		b.WriteString(s)
-	}
-
-	fmt.Println(b)
-	fmt.Println(b.String())
 	/*
-	{0xc000153ef8 [65 232 175 180 230 136 145 232 166 129 229 141 135 232 129 140 229 138 160 232 150 170]}
-	A说我要升职加薪
+	[0xc00000a098 0xc00000a0b0 0xc00000a0b8 0xc00000a0c0 0xc00000a0c8]
+	[0xc00000a098 0xc00000a0b0 0xc00000a0b8 0xc00000a0c0 0xc00000a0c8]
+	[索引：0 值是:10]
+	[索引：1 值是:2]
+	[索引：2 值是:0]
+	[索引：3 值是:0]
+	[索引：4 值是:0]
 	*/
+
 }
