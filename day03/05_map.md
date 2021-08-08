@@ -787,16 +787,27 @@ func main()  {
 
 # map的实际应用 
 
-![image](05_map.assets/map_cache.png)
-![image](05_map.assets/map_cache2.png)
-![image](05_map.assets/map_cache3.png)
 
+
+
+
+![map_cache](05_map.assets/map_cache-1628383914026.png)
+
+![map_cache2](05_map.assets/map_cache2-1628383900546.png)
+
+![map_cache3](05_map.assets/map_cache3.png)
 
 # map的原理
 
-![image](05_map.assets/map01.png)
-![image](05_map.assets/map02.png)
-![image](05_map.assets/hmap_bmap.png)
+![map01](05_map.assets/map01.png)
+
+
+
+![map02](05_map.assets/map02.png)
+
+![hmap_bmap](05_map.assets/hmap_bmap.png)
+
+![hmap_bmap](05_map.assets/hmap_bmap-1628383973667.png)
 
 ## map底层原理文章推荐
 
