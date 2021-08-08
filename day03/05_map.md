@@ -416,7 +416,7 @@ func main(){
 
 
 ```go
-# 创建工作目录
+# 工作目录,创建go.mod
 go mod init
 
 # 下载包
@@ -441,8 +441,347 @@ go mod tidy
 - 将加锁的时间控制在最低，
 - 耗时的操作在加锁外侧做
 
+```go
+package main
+
+import (
+	"fmt"
+	"log"
+	"sync"
+	"time"
+)
+
+// 带过期时间的map定时器
+type Cache struct {
+	sync.RWMutex
+	mp map[string]*item
+}
+
+type item struct {
+	value int  // 值
+	ts int64   // 时间戳，item被创建出来的时间
+}
+
+func (c *Cache) Get(key string) *item  {
+	c.RLock()
+	defer c.RUnlock()
+	return c.mp[key]
+}
+
+func (c *Cache)Set(key string, value *item)  {
+	c.Lock()
+	defer c.Unlock()
+	c.mp[key] = value
+}
+
+// 获取cache中map的数量
+func (c *Cache) CacheNum() int  {
+	c.RLock()
+	defer c.RUnlock()
+	return len(c.mp)
+}
+
+// 清除过期的值
+func (c *Cache) clean(timeDelta int64)  {
+	// 每5秒执行一次
+	for{
+		now := time.Now().Unix()
+		toDeleteKeys := make([]string, 0) // 待删除的key的切片
+
+		// 先加读锁，把所有待删除的拿到
+		c.RLock()
+		for k,v:= range c.mp{
+			// 时间比较
+			// 认为这个k,v过期了,
+			// 不直接删除，为了降低加锁时间，加入待删除的切片
+			if now - v.ts > timeDelta{
+				toDeleteKeys = append(toDeleteKeys, k)
+			}
+		}
+		c.RUnlock()
+
+		// 加写锁 删除,降低加写锁的时间
+		c.Lock()
+		for _, k := range toDeleteKeys{
+			log.Printf("[删除过期数据][key:%s]", k)
+			delete(c.mp, k)
+		}
+		c.Unlock()
+
+		time.Sleep(2 * time.Second)
+	}
+
+}
+
+func main() {
+
+	c:=Cache{
+		mp: make(map[string] *item),
+	}
+
+	// 让清理的任务异步执行
+	// 每2秒运行一次，检查时间差大于30秒item 就删除
+	go c.clean(30)
+
+
+	// 设置缓存，30s后过期
+	// 从mysql中读取到了数据，塞入缓存
+	for i:=0;i<10;i++{
+
+		now := time.Now().Unix()
+		im := &item{
+			value: i,
+			ts: now,
+		}
+
+		key := fmt.Sprintf("key_%d", i)
+
+		log.Printf("[设置缓存][item][key:%s][v:%v]", key, im)
+		c.Set(key, im)
+	}
+
+	log.Printf("缓存中的数据量:%d", c.CacheNum())
+	time.Sleep(36 * time.Second)
+	log.Printf("缓存中的数据量:%d", c.CacheNum())
+
+	// 更新缓存，30s后过期
+	for i:=0; i<5;i++{
+		now := time.Now().Unix()
+		im := &item{
+			value: i,
+			ts: now,
+		}
+
+		key := fmt.Sprintf("key_%d", i)
+
+		log.Printf("[更新缓存][item][key:%s][v:%v]", key, im)
+		c.Set(key, im)
+	}
+	log.Printf("缓存中的数据量:%d", c.CacheNum())
+
+	select{}
+
+}
+
+
+/*
+2021/08/07 17:44:29 [设置缓存][item][key:key_0][v:&{0 1628329469}]
+2021/08/07 17:44:29 [设置缓存][item][key:key_1][v:&{1 1628329469}]
+2021/08/07 17:44:29 [设置缓存][item][key:key_2][v:&{2 1628329469}]
+2021/08/07 17:44:29 [设置缓存][item][key:key_3][v:&{3 1628329469}]
+2021/08/07 17:44:29 [设置缓存][item][key:key_4][v:&{4 1628329469}]
+2021/08/07 17:44:29 [设置缓存][item][key:key_5][v:&{5 1628329469}]
+2021/08/07 17:44:29 [设置缓存][item][key:key_6][v:&{6 1628329469}]
+2021/08/07 17:44:29 [设置缓存][item][key:key_7][v:&{7 1628329469}]
+2021/08/07 17:44:29 [设置缓存][item][key:key_8][v:&{8 1628329469}]
+2021/08/07 17:44:29 [设置缓存][item][key:key_9][v:&{9 1628329469}]
+2021/08/07 17:44:29 缓存中的数据量:10
+
+2021/08/07 17:45:01 [删除过期数据][key:key_0]
+2021/08/07 17:45:01 [删除过期数据][key:key_1]
+2021/08/07 17:45:01 [删除过期数据][key:key_4]
+2021/08/07 17:45:01 [删除过期数据][key:key_5]
+2021/08/07 17:45:01 [删除过期数据][key:key_7]
+2021/08/07 17:45:01 [删除过期数据][key:key_2]
+2021/08/07 17:45:01 [删除过期数据][key:key_3]
+2021/08/07 17:45:01 [删除过期数据][key:key_6]
+2021/08/07 17:45:01 [删除过期数据][key:key_8]
+2021/08/07 17:45:01 [删除过期数据][key:key_9]
+
+2021/08/07 17:45:05 缓存中的数据量:0
+2021/08/07 17:45:05 [更新缓存][item][key:key_0][v:&{0 1628329505}]
+2021/08/07 17:45:05 [更新缓存][item][key:key_1][v:&{1 1628329505}]
+2021/08/07 17:45:05 [更新缓存][item][key:key_2][v:&{2 1628329505}]
+2021/08/07 17:45:05 [更新缓存][item][key:key_3][v:&{3 1628329505}]
+2021/08/07 17:45:05 [更新缓存][item][key:key_4][v:&{4 1628329505}]
+2021/08/07 17:45:05 缓存中的数据量:5
+
+2021/08/07 17:45:37 [删除过期数据][key:key_2]
+2021/08/07 17:45:37 [删除过期数据][key:key_0]
+2021/08/07 17:45:37 [删除过期数据][key:key_1]
+2021/08/07 17:45:37 [删除过期数据][key:key_3]
+2021/08/07 17:45:37 [删除过期数据][key:key_4]
+
+*/
+```
+
+
+
 
 ### 带过期时间的缓存 github.com/patrickmn/go-cache 
+
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/patrickmn/go-cache"
+	"time"
+)
+
+
+func main() {
+	// Create a cache with a default expiration time of 5 minutes, and which
+	// purges expired items every 10 minutes
+	// 创建过期的30s缓存，每5秒清理一次
+	c := cache.New(30*time.Second, 5*time.Second)
+
+	// Set the value of the key "foo" to "bar", with the default expiration time
+	c.Set("foo", "bar", 10*time.Second)
+
+	res,ok := c.Get("foo")
+	fmt.Println(res, ok)
+	time.Sleep(10*time.Second)
+
+	res,ok = c.Get("foo")
+	fmt.Println(res, ok)
+
+	/*
+	   bar true
+	   <nil> false
+	
+	*/
+}
+```
+
+
+
+
+
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/patrickmn/go-cache"
+	"log"
+	"time"
+)
+
+/*
+生产上用的 web缓存应用
+
+维护用户信息的模块
+在mysql中有1张user表
+
+正常情况下，用orm，gorm，xorm去db中查询
+查询qps很高，为了性能会加缓存
+(更新不会太频繁)，说明在一定时间内，获取到旧数据也能容忍
+*/
+
+type user struct {
+	Name string
+	Email string
+	Phone int64
+}
+
+var (
+	DefaultInterval = time.Minute * 1
+	UserCache = cache.New(DefaultInterval, DefaultInterval)
+)
+
+// http请求接口查询，mock模拟
+func HttpGetUser(name string) user  {
+	u := user{
+		Name: name,
+		Email: "qq.com",
+		Phone: time.Now().Unix(),
+	}
+	return u
+}
+
+// 最外层调用函数
+// 优先去本地缓存中查，有就返回
+// 没有再去远端查询，远端用http请求表示
+func GetUser(name string) user  {
+
+	// 消耗 0.1cpu 0.1M内存 0.1秒返回
+	res,found := UserCache.Get(name)
+	if found{
+		log.Printf("[本地缓存中找到了对应的用户][name：%v][value:%v]", name, res.(user))
+		return res.(user)
+
+	}else{
+	// 消耗 1cpu 10M内存 3秒返回
+		// 本地没有，但是从远端拿到了最新的数据
+		// 更新本地缓存 ,我种树，其他人乘凉
+		res := HttpGetUser(name)
+		UserCache.Set(name, res, DefaultInterval)
+		log.Printf("[本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：%v][value:%v]", name, res)
+		return res
+	}
+}
+
+// 查询方法
+func queryUser()  {
+	for i:=0 ;i<10;i++{
+		userName  := fmt.Sprintf("user_name%d", i)
+		GetUser(userName)
+	}
+}
+
+func main()  {
+	log.Printf("第1次query_user")
+	queryUser()
+
+	log.Printf("第2次query_user")
+	queryUser()
+	queryUser()
+
+	time.Sleep(61*time.Second)
+	log.Printf("第3次query_user")
+	queryUser()
+}
+
+
+/*
+2021/08/07 18:38:16 第1次query_user
+2021/08/07 18:38:16 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name0][value:{user_name0 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name1][value:{user_name1 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name2][value:{user_name2 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name3][value:{user_name3 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name4][value:{user_name4 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name5][value:{user_name5 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name6][value:{user_name6 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name7][value:{user_name7 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name8][value:{user_name8 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name9][value:{user_name9 qq.com 1628332696}]
+2021/08/07 18:38:16 第2次query_user
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name0][value:{user_name0 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name1][value:{user_name1 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name2][value:{user_name2 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name3][value:{user_name3 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name4][value:{user_name4 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name5][value:{user_name5 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name6][value:{user_name6 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name7][value:{user_name7 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name8][value:{user_name8 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name9][value:{user_name9 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name0][value:{user_name0 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name1][value:{user_name1 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name2][value:{user_name2 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name3][value:{user_name3 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name4][value:{user_name4 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name5][value:{user_name5 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name6][value:{user_name6 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name7][value:{user_name7 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name8][value:{user_name8 qq.com 1628332696}]
+2021/08/07 18:38:16 [本地缓存中找到了对应的用户][name：user_name9][value:{user_name9 qq.com 1628332696}]
+
+2021/08/07 18:39:17 第3次query_user
+2021/08/07 18:39:17 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name0][value:{user_name0 qq.com 1628332757}]
+2021/08/07 18:39:17 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name1][value:{user_name1 qq.com 1628332757}]
+2021/08/07 18:39:17 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name2][value:{user_name2 qq.com 1628332757}]
+2021/08/07 18:39:17 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name3][value:{user_name3 qq.com 1628332757}]
+2021/08/07 18:39:17 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name4][value:{user_name4 qq.com 1628332757}]
+2021/08/07 18:39:17 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name5][value:{user_name5 qq.com 1628332757}]
+2021/08/07 18:39:17 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name6][value:{user_name6 qq.com 1628332757}]
+2021/08/07 18:39:17 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name7][value:{user_name7 qq.com 1628332757}]
+2021/08/07 18:39:17 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name8][value:{user_name8 qq.com 1628332757}]
+2021/08/07 18:39:17 [本地缓存中没找到对应的用户，去远端查询获取到了，塞入缓存中][name：user_name9][value:{user_name9 qq.com 1628332757}]
+
+*/
+```
 
 
 
