@@ -1,9 +1,6 @@
 package main
 
-import (
-	"encoding/json"
-	"log"
-)
+import "log"
 
 type Person struct {
 	Name     string
@@ -22,10 +19,21 @@ func main() {
 		HouseId2: []int{200, 201},
 	}
 
-	var p2 Person
+	p2 := p1
 
-	data, _ := json.Marshal(p1)
-	json.Unmarshal(data, &p2)
+	m :=make(map[string] string)
+	for k,v := range p1.Tags{
+		m[k] = v
+	}
+	p2.Tags = m
+
+	slice1 := make([]int, 0)
+	for _,v :=range p1.HouseId2{
+		slice1 = append(slice1, v)
+	}
+	p2.HouseId2 = slice1
+
+
 
 	// 修改两个值类型的字段
 	p1.Age = 19
@@ -40,9 +48,10 @@ func main() {
 
 	log.Printf("[p1的内存地址:%p ][value:%+v]", &p1, p1)
 	log.Printf("[p2的内存地址:%p ][value:%+v]", &p2, p2)
+
 }
 
 /*
-2021/08/10 08:14:12 [p1的内存地址:0xc00004e0a0 ][value:{Name:小乙 Age:19 Tags:map[k1:v11 k2:v2] HouseId1:[100 101] HouseId2:[200 301]}]
-2021/08/10 08:14:12 [p2的内存地址:0xc00004e0f0 ][value:{Name:898 Age:123 Tags:map[k1:v1 k2:v2] HouseId1:[300 101] HouseId2:[200 201]}]
+2021/08/10 08:08:32 [p1的内存地址:0xc00004e0a0 ][value:{Name:小乙 Age:19 Tags:map[k1:v11 k2:v2] HouseId1:[100 101] HouseId2:[200 301]}]
+2021/08/10 08:08:32 [p2的内存地址:0xc00004e0f0 ][value:{Name:898 Age:123 Tags:map[k1:v1 k2:v2] HouseId1:[300 101] HouseId2:[200 201]}]
 */
