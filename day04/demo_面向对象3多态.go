@@ -4,7 +4,6 @@ import "log"
 
 // 体现多态
 // 告警通知的函数，根据不同的对象进行通知
-//
 type notifer interface {
 	// 通知方法
 	notify()
