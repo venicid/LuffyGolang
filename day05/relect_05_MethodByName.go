@@ -2,7 +2,6 @@ package main
 
 import (
 	"log"
-	"os"
 	"reflect"
 )
 
@@ -18,23 +17,14 @@ func (p Person) ReflectCallFuncWithArgs(name string, age int)  {
 		p.Name,
 		p.Age,
 	)
+
 }
 
 func (p Person) ReflectCallFuncWithoutArgs()  {
 	log.Printf("[调用的是带不参数的方法]")
 }
 
-func (p Person) ReflectCallFuncWithNoArgs1() {
-	log.Printf("[调用的是带不参数的方法 ReflectCallFuncWithNoArgs1]")
-}
-func (p Person) ReflectCallFuncWithNoArgs2() {
-	log.Printf("[调用的是带不参数的方法 ReflectCallFuncWithNoArgs2]")
-}
-
-
 func main() {
-
-	input := os.Args[1]
 
 	p := Person{
 		Name: "alex",
@@ -46,7 +36,7 @@ func main() {
 	log.Println(value)
 
 	// 2. 调用的是带参数的方法 MethodByName先获取method对象
-	funcName1 := value.MethodByName(input)
+	funcName1 := value.MethodByName("ReflectCallFuncWithArgs")
 	// 造一些参数
 	args1 := []reflect.Value{
 		reflect.ValueOf("alex"),
@@ -56,11 +46,19 @@ func main() {
 	funcName1.Call(args1)
 
 	//	3. 不带参数的方法调用,也得造个参数切片
-	funcName := value.MethodByName(input)
+	funcName := value.MethodByName("ReflectCallFuncWithoutArgs")
 	args := make([]reflect.Value, 0)
 	funcName.Call(args)
 
+
+
 }
 
+/*
+2021/09/15 01:30:08 {alex 33}
+2021/09/15 01:30:08 [调用的是带参数的方法][args.name:alex][args.age:30][p.name:alex][p.age:33]
+2021/09/15 01:30:08 [调用的是带不参数的方法]
+
+ */
 
 
