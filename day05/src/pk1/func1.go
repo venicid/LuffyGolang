@@ -2,7 +2,7 @@ package pk4
 
 import (
 	"fmt"
-	"lugo04/src/pk1/pk2"
+	"day05/src/pk1/pk2"
 )
 
 func Func_test1() {

@@ -1,10 +1,10 @@
 package main
 
 import (
+	myLog "day05/src/log"
+	. "day05/src/pk1"
+	"day05/src/pk1/pk2"
 	"log"
-	myLog "lugo04/src/log"
-	. "lugo04/src/pk1"
-	"lugo04/src/pk1/pk2"
 )
 
 func main() {
@@ -14,3 +14,12 @@ func main() {
 	Func_test1()
 	pk3.Func_test3()
 }
+
+/*
+我自定义的log
+func_test1
+func_test2
+func_test3
+func_test3
+2021/09/16 22:36:01 官方的log
+*/

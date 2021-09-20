@@ -9,7 +9,7 @@ import (
 func main()  {
 
 	/*
-		go build -o abc a.go
+		go build -o abc example.go
 		echo "date" > a.txt
 		./abc < a.txt
 	*/

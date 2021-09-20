@@ -1,0 +1,24 @@
+package main
+
+import (
+	"database/sql"
+	"fmt"
+	"time"
+
+	_ "github.com/go-sql-driver/mysql"
+)
+
+func main() {
+
+	// ...
+
+	db, err := sql.Open("mysql", "root:123123@tcp(localhost)/grafana")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(db)
+	// See "Important settings" section.
+	db.SetConnMaxLifetime(time.Minute * 3)
+	db.SetMaxOpenConns(10)
+	db.SetMaxIdleConns(10)
+}
