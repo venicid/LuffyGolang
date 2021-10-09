@@ -134,7 +134,7 @@ v := <- ch
 通道接收有如下特性：
 
 ① 通道的收发操作在不同的两个 goroutine 间进行。
-    由于通道的数据在没有接收方处理时，数据发送方会持续阻塞，因此通道的接收必定在另外一个 goroutine 中进行。
+    由于通道的数据在没有接收方处理时，`数据发送方会持续阻塞`，因此通道的接收必定在另外一个 goroutine 中进行。
 
 ② 接收将持续阻塞直到发送方发送数据。
      如果接收方接收时，通道中没有发送方发送数据，接收方也会发生阻塞，直到发送方发送数据为止。
@@ -179,7 +179,7 @@ var chRecvOnly <-chan int = ch
 
 例如下面的代码示例：
 
-```
+```go
 func send(c chan<- int) {
     fmt.Printf("send: %T\n", c)
     c <- 1
@@ -198,6 +198,12 @@ func main() {
     time.Sleep(1 * time.Second)
 }
 
+/*
+chan int
+send: chan<- int
+recv: <-chan int
+1
+*/
 ```
 
 ### 关闭Channel
@@ -212,7 +218,7 @@ close(ch)
 
 可以用for range来循环取出管道里的数据，range当遇到管道关闭时候就会自动结束循环，例子：
 
-```
+```go
 func foo(c chan string) {
     c <- "a"
     c <- "b"
@@ -227,6 +233,10 @@ func main() {
     }
 }
 
+/*
+a
+b
+*/
 ```
 
 >> 只有必须告知接收者没有数据要接收了才需要关闭管道，例如上面例子中需要告知range循环该结束了。如果不告知就会造成死锁
@@ -257,7 +267,7 @@ Go语言中有缓冲的通道（buffered channel）是一种在被接收前能�
 3. 缓冲大小：决定通道最多可以保存的元素数量。
 4. 通道实例：被创建出的通道实例。
 
-```go
+```
 func main() {
 
     // 创建一个3个元素缓冲大小的整型通道
@@ -278,7 +288,7 @@ func main() {
 ```
 
 ### channel select语句
-select 是 Go 中的一个控制结构，类似于用于通信的 switch 语句。`每个 case 必须是一个通信操作，要么是发送要么是接收`。通常的说，select就是用来监听和channel有关的IO操作，当 IO 操作发生时，触发相应的动作。	
+select 是 Go 中的一个控制结构，类似于用于通信的 switch 语句。每个 case 必须是一个通信操作，要么是发送要么是接收。通常的说，select就是用来监听和channel有关的IO操作，当 IO 操作发生时，触发相应的动作。	
 
 ```
 select 语句的语法如下：
@@ -299,7 +309,7 @@ select {
 案例1 ：
         如果有一个或多个IO操作可以完成，则Go运行时系统会随机的选择一个执行，否则的话，如果有default分支，则执行default分支语句，如果连default都没有，则select语句会一直阻塞，直到至少有一个IO操作可以进行。
 
-```go
+```
 
 	start := time.Now()
 	c := make(chan interface{})
@@ -327,25 +337,17 @@ select {
 		fmt.Printf("ch1 case...")
 	case <-ch2:
 		fmt.Printf("ch2 case...")
-	// default:
-	// fmt.Printf("default go...")
+	default:
+		fmt.Printf("default go...")
 	}
 
-/*
-多个io操作，同时完成，随机选择1个
-Blocking...
-ch1 case
-
-Blocking...
-Unblock 1.005006119s
-*/
 ```
 
 与 switch 语句相比，select 有比较多的限制，其中最大的一条限制就是每个 case 语句里必须是一个 IO 操作，大致的结构如下：
 
-```go
+```
 select {
-    case <-chan1:
+    case <-chan1:     
     // 如果chan1成功读到数据，则进行该case处理语句
        
    case chan2 <- 1:
@@ -367,9 +369,9 @@ select {
 ----
 
 案例2 ：
-       虽然 select 机制不是专门为超时而设计的，却能很方便的`解决超时问题`，因为 select 的特点是只要其中有一个 case 已经完成，程序就会继续往下执行，而不会考虑其他 case 的情况。
+       虽然 select 机制不是专门为超时而设计的，却能很方便的解决超时问题，因为 select 的特点是只要其中有一个 case 已经完成，程序就会继续往下执行，而不会考虑其他 case 的情况。
 
-```go
+```
 ch := make(chan int)
 quit := make(chan bool)
 //新开一个协程
@@ -404,11 +406,11 @@ fmt.Println("程序结束")
 - 说话方在完成时需要补上一句“完毕”，随后放开通话按钮，从发送切换到接收状态，收听对方说话。
 - 收听方在听到对方说“完毕”时，按下通话按钮，从接收切换到发送状态，开始说话。
 
-电话可以在说话的同时听到对方说话，所以电话是一种多路复用的设备，一条通信线路上可以同时接收或者发送数据。同样的，网线、光纤也都是基于多路复用模式来设计的，网线光纤`不仅可支持同时收发数据，还支持多个人同时收发数据`。
+电话可以在说话的同时听到对方说话，所以电话是一种多路复用的设备，一条通信线路上可以同时接收或者发送数据。同样的，网线、光纤也都是基于多路复用模式来设计的，网线、光纤不仅可支持同时收发数据，还支持多个人同时收发数据。
 
 在使用通道时，想同时接收多个通道的数据是一件困难的事情。通道在接收数据时，如果没有数据可以接收将会发生阻塞。虽然可以使用如下模式进行遍历，但运行性能会非常差。
 
-```go
+```
 错误的示例：
 for{
     // 尝试接收ch1通道
@@ -421,9 +423,7 @@ for{
 
 ```
 
-
-
-```go
+```
 正确的示例：
 
 select{
@@ -457,7 +457,7 @@ Go语言具有支持高并发的特性，可以很方便地实现多线程运算
 
 众所周知服务器的处理器大都是单核频率较低而核心数较多，对于支持高并发的程序语言，可以充分利用服务器的多核优势，从而降低单核压力，减少性能浪费。
 
-```
+```go
 
 cpuNum := runtime.NumCPU() //获得当前设备的cpu核心数
 fmt.Println("cpu核心数:", cpuNum)
@@ -479,4 +479,68 @@ runtime.GOMAXPROCS(cpuNum) //设置需要用到的cpu数量
 ```
 
 
+
+```go
+
+/*
+./fetch  https://baidu.com https://taobao.com
+// 结果如下：
+0.35s   304728  https://baidu.com
+0.50s   111189  https://taobao.com
+
+*/
+
+package main
+
+import (
+	"fmt"
+	"io"
+	"io/ioutil"
+	"net/http"
+	"os"
+	"time"
+)
+
+func fetch(url string, ch chan <- string)  {
+	start := time.Now()
+
+	resp, err := http.Get(url)  // 这是用来请求的
+	if err != nil{
+		ch <- fmt.Sprint(err)
+		return
+	}
+
+	nbytes, err := io.Copy(ioutil.Discard, resp.Body)  // 获取响应内容
+	resp.Body.Close()  // don‘t leak resources
+	if err != nil{
+		ch <- fmt.Sprintf("读取错误%s:%v", url, err)
+		return
+	}
+
+	secs := time.Since(start).Seconds()
+	ch <- fmt.Sprintf("%.2f %7d %s", secs, nbytes, url)
+}
+
+func main()  {
+	ch := make(chan string)
+
+	for _, url := range os.Args[1:]{
+		go fetch(url, ch)
+	}
+
+	for range os.Args[1:]{
+		fmt.Println(<-ch)
+	}
+
+}
+
+
+/*
+命令行运行
+E:\golang\HelloGolang\day07_goroutine>go run fetch.go  https://baidu.com https://baidu.com
+0.61  321190 https://baidu.com
+1.00  320839 https://baidu.com
+
+*/
+```
 
