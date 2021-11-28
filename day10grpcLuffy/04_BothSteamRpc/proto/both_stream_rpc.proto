@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+option go_package="./;simple";
+
+package proto;
+
+message SimpleRequest{
+  // 定义发送的参数，一般采用骆驼峰命名，小写加下划线，比如，student_name
+  // 参数类型 参数名 标识号(不可重复)
+  string data = 1;
+}
+
+message SimpleResponse{
+  // 定义响应的参数
+  // 参数类型 参数名 标识号 (不可重复)
+  int32 code = 1;
+  string value = 2;
+}
+
+
+// 定义流式请求数据
+message StreamRequest{
+  // 流式请求数据
+  string question = 1;
+}
+
+
+// 定义流式响应数据
+message StreamResponse{
+  string answer = 1;
+}
+
+
+// 定义服务
+service StreamService{
+  rpc Route(SimpleRequest) returns (SimpleResponse){};
+
+  rpc Conversations(stream StreamRequest) returns (stream StreamResponse){};
+}
+
