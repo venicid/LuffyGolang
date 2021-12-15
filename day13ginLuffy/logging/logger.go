@@ -44,6 +44,13 @@ func DefaultLogger() *zap.SugaredLogger  {
 	return defaultLogger
 }
 
+func WithLogger(ctx context.Context, logger *zap.SugaredLogger) context.Context {
+	if gCtx, ok := ctx.(*gin.Context); ok {
+		ctx = gCtx.Request.Context()
+	}
+	return context.WithValue(ctx, loggerKey, logger)
+}
+
 func fromContext(ctx context.Context) *zap.SugaredLogger  {
 	if ctx == nil{
 		return DefaultLogger()
