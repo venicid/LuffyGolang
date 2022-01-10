@@ -1,0 +1,22 @@
+{
+  "debug": true,
+  "pid": "agentx.pid",
+  "logfile": "/var/run/agentx.log",
+  "transfer": {
+    "enabled": true,
+    "addrs": [
+      "127.0.0.1:8433"
+    ],
+    "interval": 60,
+    "timeout": 1000
+  },
+  "http": {
+    "listen": ":8080"
+  },
+  "collector": {
+    "ifacePrefix": [
+      "eth",
+      "em"
+    ]
+  }
+}

@@ -1,0 +1,423 @@
+time="2021-10-24 01:56:10" level=debug msg=begin key=startup
+time="2021-10-24 01:56:10" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 01:56:10" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 01:56:10" level=debug msg=begin key=startup
+time="2021-10-24 01:59:16" level=debug msg=begin key=startup
+time="2021-10-24 01:59:16" level=debug msg=86682 key=startup
+time="2021-10-24 01:59:16" level=info msg="agent已退出" key=startup
+time="2021-10-24 01:59:33" level=debug msg=begin key=startup
+time="2021-10-24 01:59:33" level=fatal msg="get local addr failed !" key=startup
+time="2021-10-24 02:00:19" level=debug msg=begin key=startup
+time="2021-10-24 02:00:19" level=fatal msg="get local addr failed !" key=startup
+time="2021-10-24 02:02:57" level=debug msg=begin key=startup
+time="2021-10-24 02:02:57" level=debug msg="进程没有运行" key=startup
+time="2021-10-24 02:03:00" level=debug msg=begin key=startup
+time="2021-10-24 02:03:00" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 02:03:00" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 02:03:00" level=debug msg=begin key=startup
+time="2021-10-24 02:09:33" level=debug msg=begin key=startup
+time="2021-10-24 02:09:33" level=debug msg="进程没有运行" key=startup
+time="2021-10-24 02:09:47" level=debug msg=begin key=startup
+time="2021-10-24 02:09:47" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 02:09:47" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 02:09:47" level=debug msg=begin key=startup
+time="2021-10-24 02:10:19" level=debug msg=begin key=startup
+time="2021-10-24 02:10:19" level=debug msg=87363 key=startup
+time="2021-10-24 02:10:19" level=info msg="agent已退出" key=startup
+time="2021-10-24 02:10:35" level=debug msg=begin key=startup
+time="2021-10-24 02:10:35" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 02:10:35" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 02:10:35" level=debug msg=begin key=startup
+time="2021-10-24 02:15:42" level=debug msg=begin key=startup
+time="2021-10-24 02:15:42" level=debug msg=87466 key=startup
+time="2021-10-24 02:15:42" level=info msg="agent已退出" key=startup
+time="2021-10-24 02:15:57" level=debug msg=begin key=startup
+time="2021-10-24 02:15:57" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 02:15:57" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 02:15:57" level=debug msg=begin key=startup
+time="2021-10-24 02:16:55" level=debug msg=begin key=startup
+time="2021-10-24 02:16:56" level=debug msg=87752 key=startup
+time="2021-10-24 02:16:56" level=info msg="agent已退出" key=startup
+time="2021-10-24 02:17:10" level=debug msg=begin key=startup
+time="2021-10-24 02:17:10" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 02:17:10" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 02:17:10" level=debug msg=begin key=startup
+time="2021-10-24 02:17:58" level=debug msg=begin key=startup
+time="2021-10-24 02:17:58" level=debug msg=87867 key=startup
+time="2021-10-24 02:17:58" level=info msg="agent已退出" key=startup
+time="2021-10-24 02:18:00" level=debug msg=begin key=startup
+time="2021-10-24 02:18:00" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 02:18:00" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 02:18:00" level=debug msg=begin key=startup
+time="2021-10-24 02:19:00" level=debug msg="[]"
+time="2021-10-24 02:19:00" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 02:19:00" level=debug msg="[]"
+time="2021-10-24 02:19:00" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635013140, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 02:19:21" level=debug msg=begin key=startup
+time="2021-10-24 02:19:21" level=debug msg=87954 key=startup
+time="2021-10-24 02:19:21" level=info msg="cmd+args:\t./agent main\n" key=startup
+time="2021-10-24 02:19:21" level=info msg="agent已退出" key=startup
+time="2021-10-24 02:20:00" level=debug msg="[]"
+time="2021-10-24 02:20:00" level=debug msg="[]"
+time="2021-10-24 02:20:00" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 02:20:00" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635013200, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 02:21:00" level=debug msg="[]"
+time="2021-10-24 02:21:00" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 02:21:00" level=debug msg="[]"
+time="2021-10-24 02:21:00" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635013260, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 02:21:29" level=debug msg=begin key=startup
+time="2021-10-24 02:21:29" level=debug msg="进程没有运行" key=startup
+time="2021-10-24 02:21:51" level=debug msg=begin key=startup
+time="2021-10-24 02:21:51" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 02:21:51" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 02:21:51" level=debug msg=begin key=startup
+time="2021-10-24 02:21:57" level=debug msg=begin key=startup
+time="2021-10-24 02:21:57" level=debug msg=88204 key=startup
+time="2021-10-24 02:21:57" level=info msg="cmd+args:\t./agent main\n" key=startup
+time="2021-10-24 02:21:57" level=info msg="正在停止Agent进程:88204" key=startup
+time="2021-10-24 02:21:57" level=fatal key=startup
+time="2021-10-24 16:10:36" level=debug msg=begin key=startup
+time="2021-10-24 16:10:36" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 16:10:36" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 16:10:36" level=debug msg=begin key=startup
+time="2021-10-24 16:10:48" level=debug msg=begin key=startup
+time="2021-10-24 16:10:48" level=debug msg=17717 key=startup
+time="2021-10-24 16:10:48" level=info msg="cmd+args:\t./agentx_osx main\n" key=startup
+time="2021-10-24 16:10:48" level=info msg="agent已退出" key=startup
+time="2021-10-24 16:11:33" level=debug msg=begin key=startup
+time="2021-10-24 16:11:33" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 16:11:33" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 16:11:33" level=debug msg=begin key=startup
+time="2021-10-24 16:11:40" level=debug msg=begin key=startup
+time="2021-10-24 16:11:40" level=debug msg=17806 key=startup
+time="2021-10-24 16:11:40" level=info msg="cmd+args:\t./agentx_osx main\n" key=startup
+time="2021-10-24 16:11:40" level=info msg="agent已退出" key=startup
+time="2021-10-24 16:12:33" level=debug msg="[]"
+time="2021-10-24 16:12:33" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:12:33" level=debug msg="[]"
+time="2021-10-24 16:12:33" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635063153, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:13:12" level=debug msg=begin key=startup
+time="2021-10-24 16:13:12" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 16:13:12" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 16:13:12" level=debug msg=begin key=startup
+time="2021-10-24 16:13:22" level=debug msg=begin key=startup
+time="2021-10-24 16:13:22" level=debug msg=17934 key=startup
+time="2021-10-24 16:13:22" level=info msg="cmd+args:\t./agentx_osx main\n" key=startup
+time="2021-10-24 16:13:22" level=info msg="正在停止Agent进程:17934" key=startup
+time="2021-10-24 16:13:22" level=fatal key=startup
+time="2021-10-24 16:13:27" level=debug msg=begin key=startup
+time="2021-10-24 16:13:27" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 16:13:27" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 16:13:27" level=debug msg=begin key=startup
+time="2021-10-24 16:13:37" level=debug msg=begin key=startup
+time="2021-10-24 16:13:37" level=debug msg=17965 key=startup
+time="2021-10-24 16:13:37" level=info msg="cmd+args:\t./agentx_osx main\n" key=startup
+time="2021-10-24 16:13:37" level=info msg="正在停止Agent进程:17965" key=startup
+time="2021-10-24 16:13:37" level=fatal key=startup
+time="2021-10-24 16:14:55" level=debug msg=begin key=startup
+time="2021-10-24 16:14:55" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 16:14:55" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 16:14:55" level=debug msg=begin key=startup
+time="2021-10-24 16:15:49" level=debug msg=begin key=startup
+time="2021-10-24 16:15:49" level=debug msg=18105 key=startup
+time="2021-10-24 16:15:49" level=info msg="cmd+args:\t./agentx_osx main\n" key=startup
+time="2021-10-24 16:15:49" level=info msg="正在停止Agent进程:18105" key=startup
+time="2021-10-24 16:15:49" level=fatal key=startup
+time="2021-10-24 16:17:06" level=debug msg=begin key=startup
+time="2021-10-24 16:17:06" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 16:17:06" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 16:17:06" level=debug msg=begin key=startup
+time="2021-10-24 16:18:06" level=debug msg="[]"
+time="2021-10-24 16:18:06" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:18:06" level=debug msg="[]"
+time="2021-10-24 16:18:06" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635063486, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:19:00" level=debug msg=begin key=startup
+time="2021-10-24 16:19:01" level=debug msg=18241 key=startup
+time="2021-10-24 16:19:01" level=info msg="cmd+args:\t./agentx_osx main\n" key=startup
+time="2021-10-24 16:19:01" level=info msg="正在停止Agent进程:18241" key=startup
+time="2021-10-24 16:19:01" level=fatal key=startup
+time="2021-10-24 16:26:50" level=debug msg=begin key=startup
+time="2021-10-24 16:26:50" level=info msg="配置初始化成功..." key=startup
+time="2021-10-24 16:26:50" level=info msg="agent进程已启动" key=startup
+time="2021-10-24 16:26:50" level=debug msg=begin key=startup
+time="2021-10-24 16:27:50" level=debug msg="[]"
+time="2021-10-24 16:27:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:27:50" level=debug msg="[]"
+time="2021-10-24 16:27:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064070, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:28:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:28:50" level=debug msg="[]"
+time="2021-10-24 16:28:50" level=debug msg="[]"
+time="2021-10-24 16:28:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064130, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:29:50" level=debug msg="[]"
+time="2021-10-24 16:29:50" level=debug msg="[]"
+time="2021-10-24 16:29:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:29:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064190, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:30:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:30:50" level=debug msg="[]"
+time="2021-10-24 16:30:50" level=debug msg="[]"
+time="2021-10-24 16:30:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064250, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:31:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:31:50" level=debug msg="[]"
+time="2021-10-24 16:31:50" level=debug msg="[]"
+time="2021-10-24 16:31:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064310, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:32:50" level=debug msg="[]"
+time="2021-10-24 16:32:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:32:50" level=debug msg="[]"
+time="2021-10-24 16:32:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064370, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:33:50" level=debug msg="[]"
+time="2021-10-24 16:33:50" level=debug msg="[]"
+time="2021-10-24 16:33:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:33:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064430, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:34:50" level=debug msg="[]"
+time="2021-10-24 16:34:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:34:50" level=debug msg="[]"
+time="2021-10-24 16:34:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064490, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:35:50" level=debug msg="[]"
+time="2021-10-24 16:35:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:35:50" level=debug msg="[]"
+time="2021-10-24 16:35:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064550, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:36:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:36:50" level=debug msg="[]"
+time="2021-10-24 16:36:50" level=debug msg="[]"
+time="2021-10-24 16:36:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064610, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:37:50" level=debug msg="[]"
+time="2021-10-24 16:37:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:37:50" level=debug msg="[]"
+time="2021-10-24 16:37:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064670, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:38:50" level=debug msg="[]"
+time="2021-10-24 16:38:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:38:50" level=debug msg="[]"
+time="2021-10-24 16:38:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064730, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:39:50" level=debug msg="[]"
+time="2021-10-24 16:39:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:39:50" level=debug msg="[]"
+time="2021-10-24 16:39:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064790, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:40:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:40:50" level=debug msg="[]"
+time="2021-10-24 16:40:50" level=debug msg="[]"
+time="2021-10-24 16:40:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064850, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:41:50" level=debug msg="[]"
+time="2021-10-24 16:41:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:41:50" level=debug msg="[]"
+time="2021-10-24 16:41:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064910, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:42:50" level=debug msg="[]"
+time="2021-10-24 16:42:50" level=debug msg="[]"
+time="2021-10-24 16:42:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:42:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635064970, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:43:50" level=debug msg="[]"
+time="2021-10-24 16:43:50" level=debug msg="[]"
+time="2021-10-24 16:43:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:43:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635065030, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:44:50" level=debug msg="[]"
+time="2021-10-24 16:44:50" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.4>]"
+time="2021-10-24 16:44:50" level=debug msg="[]"
+time="2021-10-24 16:44:50" level=info msg="111 [<Endpoint:QXIT-PC-000980.local, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1635065090, Value:192.168.1.4>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2021-10-24 16:45:36" level=debug msg=begin key=startup
+time="2021-10-24 16:45:36" level=debug msg=18710 key=startup
+time="2021-10-24 16:45:36" level=info msg="cmd+args:\t./agentx_osx main\n" key=startup
+time="2021-10-24 16:45:36" level=info msg="正在停止Agent进程:18710" key=startup
+time="2021-10-24 16:45:36" level=fatal key=startup
+time="2022-01-08 00:44:53" level=debug msg=begin key=startup
+time="2022-01-08 00:45:00" level=debug msg=begin key=startup
+time="2022-01-08 00:45:02" level=info msg="配置初始化成功..." key=startup
+time="2022-01-08 00:45:02" level=info msg="agent进程已启动" key=startup
+time="2022-01-08 00:45:02" level=debug msg=begin key=startup
+time="2022-01-08 00:46:02" level=debug msg="[]"
+time="2022-01-08 00:46:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:46:02" level=debug msg="[]"
+time="2022-01-08 00:46:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641573962, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:47:02" level=debug msg="[]"
+time="2022-01-08 00:47:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:47:02" level=debug msg="[]"
+time="2022-01-08 00:47:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574022, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:48:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:48:02" level=debug msg="[]"
+time="2022-01-08 00:48:02" level=debug msg="[]"
+time="2022-01-08 00:48:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574082, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:49:02" level=debug msg="[]"
+time="2022-01-08 00:49:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:49:02" level=debug msg="[]"
+time="2022-01-08 00:49:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574142, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:50:02" level=debug msg="[]"
+time="2022-01-08 00:50:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:50:02" level=debug msg="[]"
+time="2022-01-08 00:50:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574202, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:51:02" level=debug msg="[]"
+time="2022-01-08 00:51:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:51:02" level=debug msg="[]"
+time="2022-01-08 00:51:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574262, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:52:02" level=debug msg="[]"
+time="2022-01-08 00:52:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:52:02" level=debug msg="[]"
+time="2022-01-08 00:52:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574322, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:53:02" level=debug msg="[]"
+time="2022-01-08 00:53:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:53:02" level=debug msg="[]"
+time="2022-01-08 00:53:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574382, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:54:02" level=debug msg="[]"
+time="2022-01-08 00:54:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:54:02" level=debug msg="[]"
+time="2022-01-08 00:54:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574442, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:55:02" level=debug msg="[]"
+time="2022-01-08 00:55:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:55:02" level=debug msg="[]"
+time="2022-01-08 00:55:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574502, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:56:02" level=debug msg="[]"
+time="2022-01-08 00:56:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:56:02" level=debug msg="[]"
+time="2022-01-08 00:56:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574562, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:57:02" level=debug msg="[]"
+time="2022-01-08 00:57:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:57:02" level=debug msg="[]"
+time="2022-01-08 00:57:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574622, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:58:02" level=debug msg="[]"
+time="2022-01-08 00:58:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:58:02" level=debug msg="[]"
+time="2022-01-08 00:58:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574682, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 00:59:02" level=debug msg="[]"
+time="2022-01-08 00:59:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 00:59:02" level=debug msg="[]"
+time="2022-01-08 00:59:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574742, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:00:02" level=debug msg="[]"
+time="2022-01-08 01:00:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:00:02" level=debug msg="[]"
+time="2022-01-08 01:00:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574802, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:01:02" level=debug msg="[]"
+time="2022-01-08 01:01:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:01:02" level=debug msg="[]"
+time="2022-01-08 01:01:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574862, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:02:02" level=debug msg="[]"
+time="2022-01-08 01:02:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:02:02" level=debug msg="[]"
+time="2022-01-08 01:02:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574922, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:03:02" level=debug msg="[]"
+time="2022-01-08 01:03:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:03:02" level=debug msg="[]"
+time="2022-01-08 01:03:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641574982, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:04:02" level=debug msg="[]"
+time="2022-01-08 01:04:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:04:02" level=debug msg="[]"
+time="2022-01-08 01:04:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575042, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:05:02" level=debug msg="[]"
+time="2022-01-08 01:05:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:05:02" level=debug msg="[]"
+time="2022-01-08 01:05:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575102, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:06:02" level=debug msg="[]"
+time="2022-01-08 01:06:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:06:02" level=debug msg="[]"
+time="2022-01-08 01:06:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575162, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:06:21" level=debug msg=begin key=startup
+time="2022-01-08 01:06:22" level=debug msg=5512 key=startup
+time="2022-01-08 01:06:24" level=info msg="cmd+args:\tE:\\golang\\HelloGolang\\lufflyagent\\agentx_windows.exe main\n" key=startup
+time="2022-01-08 01:06:24" level=info msg="agent已退出" key=startup
+time="2022-01-08 01:07:02" level=debug msg="[]"
+time="2022-01-08 01:07:02" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:07:02" level=debug msg="[]"
+time="2022-01-08 01:07:02" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575222, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:08:47" level=debug msg=begin key=startup
+time="2022-01-08 01:08:51" level=debug msg=begin key=startup
+time="2022-01-08 01:08:51" level=debug msg="进程没有运行" key=startup
+time="2022-01-08 01:08:54" level=debug msg=begin key=startup
+time="2022-01-08 01:08:56" level=info msg="配置初始化成功..." key=startup
+time="2022-01-08 01:08:56" level=info msg="agent进程已启动" key=startup
+time="2022-01-08 01:08:56" level=debug msg=begin key=startup
+time="2022-01-08 01:09:56" level=debug msg="[]"
+time="2022-01-08 01:09:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:09:56" level=debug msg="[]"
+time="2022-01-08 01:09:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575396, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:10:56" level=debug msg="[]"
+time="2022-01-08 01:10:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:10:56" level=debug msg="[]"
+time="2022-01-08 01:10:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575456, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:11:56" level=debug msg="[]"
+time="2022-01-08 01:11:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:11:56" level=debug msg="[]"
+time="2022-01-08 01:11:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575516, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:12:56" level=debug msg="[]"
+time="2022-01-08 01:12:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:12:56" level=debug msg="[]"
+time="2022-01-08 01:12:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575576, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:13:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:13:56" level=debug msg="[]"
+time="2022-01-08 01:13:56" level=debug msg="[]"
+time="2022-01-08 01:13:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575636, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:14:56" level=debug msg="[]"
+time="2022-01-08 01:14:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:14:56" level=debug msg="[]"
+time="2022-01-08 01:14:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575696, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:15:56" level=debug msg="[]"
+time="2022-01-08 01:15:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:15:56" level=debug msg="[]"
+time="2022-01-08 01:15:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575756, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:16:56" level=debug msg="[]"
+time="2022-01-08 01:16:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:16:56" level=debug msg="[]"
+time="2022-01-08 01:16:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575816, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:17:56" level=debug msg="[]"
+time="2022-01-08 01:17:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:17:56" level=debug msg="[]"
+time="2022-01-08 01:17:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575876, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:18:56" level=debug msg="[]"
+time="2022-01-08 01:18:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:18:56" level=debug msg="[]"
+time="2022-01-08 01:18:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575936, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:19:56" level=debug msg="[]"
+time="2022-01-08 01:19:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:19:56" level=debug msg="[]"
+time="2022-01-08 01:19:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641575996, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:20:56" level=debug msg="[]"
+time="2022-01-08 01:20:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:20:56" level=debug msg="[]"
+time="2022-01-08 01:20:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576056, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:21:56" level=debug msg="[]"
+time="2022-01-08 01:21:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:21:56" level=debug msg="[]"
+time="2022-01-08 01:21:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576116, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:22:56" level=debug msg="[]"
+time="2022-01-08 01:22:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:22:56" level=debug msg="[]"
+time="2022-01-08 01:22:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576176, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:23:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:23:56" level=debug msg="[]"
+time="2022-01-08 01:23:56" level=debug msg="[]"
+time="2022-01-08 01:23:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576236, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:24:56" level=debug msg="[]"
+time="2022-01-08 01:24:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:24:56" level=debug msg="[]"
+time="2022-01-08 01:24:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576296, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:25:56" level=debug msg="[]"
+time="2022-01-08 01:25:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:25:56" level=debug msg="[]"
+time="2022-01-08 01:25:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576356, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:26:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:26:56" level=debug msg="[]"
+time="2022-01-08 01:26:56" level=debug msg="[]"
+time="2022-01-08 01:26:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576416, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:27:56" level=debug msg="[]"
+time="2022-01-08 01:27:56" level=debug msg="[]"
+time="2022-01-08 01:27:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:27:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576476, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:28:56" level=debug msg="[]"
+time="2022-01-08 01:28:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:28:56" level=debug msg="[]"
+time="2022-01-08 01:28:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576536, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:29:56" level=debug msg="[]"
+time="2022-01-08 01:29:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:29:56" level=debug msg="[]"
+time="2022-01-08 01:29:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576596, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:30:56" level=debug msg="[]"
+time="2022-01-08 01:30:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:30:56" level=debug msg="[]"
+time="2022-01-08 01:30:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576656, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:31:56" level=debug msg="[]"
+time="2022-01-08 01:31:56" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:31:56" level=debug msg="[]"
+time="2022-01-08 01:31:56" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641576716, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
+time="2022-01-08 01:40:08" level=debug msg=begin key=startup
+time="2022-01-08 01:40:10" level=info msg="配置初始化成功..." key=startup
+time="2022-01-08 01:40:10" level=info msg="agent进程已启动" key=startup
+time="2022-01-08 01:40:12" level=debug msg=begin key=startup
+time="2022-01-08 01:41:12" level=debug msg="[]"
+time="2022-01-08 01:41:12" level=debug msg="[<Endpoint:, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:0, Time:0, Value:192.168.1.20>]"
+time="2022-01-08 01:41:12" level=debug msg="[]"
+time="2022-01-08 01:41:12" level=info msg="111 [<Endpoint:LAPTOP-P42T1S35, Metric:sysinfo.innerip, Type:GAUGE, Tags:, Step:60, Time:1641577272, Value:192.168.1.20>] <Total=0, Invalid:0, Latency=0ms, Message:>" key=job
