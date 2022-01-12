@@ -1,7 +1,9 @@
 package main
 
 import (
+	"day14LuffyAgent/cron"
 	"day14LuffyAgent/http"
+	"day14LuffyAgent/metrics"
 	"day14LuffyAgent/settings"
 	"fmt"
 	goHttp "net/http"
@@ -35,8 +37,22 @@ func main()  {
 		os.Exit(0)   // 安全退出
 	}
 
-	settings.LoadConfiguration()
-	settings.InitLocalIp()
+	settings.LoadConfiguration() // 加载配置文件
+	settings.InitLocalIp()  // 知晓ip地址
+
+
+	/*
+		监控数据定时采集
+		先初始化，引入映射关系，然后进行数据采集
+
+		解耦：数据定义，定时，数据采集
+		插拔式，容易实现服务降级，熔断。
+
+		监控采集服务挂掉，不影响其他服务运行
+	*/
+	metrics.BuildMappers()
+	go cron.InitDataHistory()
+	cron.Collect()
 
 	// 让agent有守护进程的能力
 	fmt.Println(os.Args[1])

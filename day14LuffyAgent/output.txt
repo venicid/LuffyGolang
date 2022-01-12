@@ -1,0 +1,1 @@
+[{"endpoint":"LAPTOP-P42T1S35","metric":"sysinfo.innerip","value":"192.168.1.20","step":60,"type":"GAUGE","tags":"","timestamp":1642004775}]
