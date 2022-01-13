@@ -1,13 +1,14 @@
 package metrics
 
 import (
-	"day14LuffyAgent/models"
+	model "day14LuffyAgent/models"
 	"day14LuffyAgent/settings"
+
 )
 
 // 输出格式化,多个json数据组装为数组，上传
 type FuncsAndInterval struct {
-	Fs []func() []*models.MetricValue
+	Fs []func() []*model.MetricValue
 	Interval int
 }
 
@@ -19,8 +20,17 @@ func BuildMappers()  {
 
 	Mappers = []FuncsAndInterval{
 		FuncsAndInterval{
-			Fs: []func() []*models.MetricValue{
-				SysMetrics,  // 方法名称
+			Fs: []func() []*model.MetricValue{
+				CpuMetrics,      // 监控指标-CPU
+
+			},
+			Interval: interval,
+		},
+
+
+		FuncsAndInterval{
+			Fs: []func() []*model.MetricValue{
+				SysMetrics,
 			},
 			Interval: interval,
 		},

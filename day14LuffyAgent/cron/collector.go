@@ -30,6 +30,7 @@ func Collect()  {
 // 数据采集
 func collect(sec int64, fns []func() []*models.MetricValue)  {
 	t := time.NewTicker(time.Second * time.Duration(sec)).C
+
 	for{
 		<- t
 

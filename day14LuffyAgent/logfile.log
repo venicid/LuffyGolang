@@ -1,0 +1,119 @@
+time="2022-01-14 00:35:42" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:35:42" level=info msg="当前ip地址为：" key=startup
+time="2022-01-14 00:36:25" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:36:25" level=info msg="当前ip地址为：" key=startup
+time="2022-01-14 00:36:27" level=info msg="配置初始化成功..." key=startup
+time="2022-01-14 00:36:27" level=info msg="agent进程已经启动" key=startup
+time="2022-01-14 00:36:27" level=info msg="IP: " key=startup
+time="2022-01-14 00:36:27" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:36:28" level=info msg="当前ip地址为：" key=startup
+time="2022-01-14 00:37:14" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:37:14" level=info key=startup
+time="2022-01-14 00:37:14" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 00:37:16" level=info msg="配置初始化成功..." key=startup
+time="2022-01-14 00:37:16" level=info msg="agent进程已经启动" key=startup
+time="2022-01-14 00:37:16" level=info msg="IP: 192.168.1.20" key=startup
+time="2022-01-14 00:37:17" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:37:17" level=info key=startup
+time="2022-01-14 00:37:17" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 00:38:17" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:39:00" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:39:00" level=info key=startup
+time="2022-01-14 00:39:00" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 00:39:00" level=info msg=16892 key=startup
+time="2022-01-14 00:39:01" level=info msg="cmd+args:\tE:\\golang\\HelloGolang\\day14LuffyAgent\\agentx_windows.exe main\n" key=startup
+time="2022-01-14 00:40:55" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:40:55" level=info key=startup
+time="2022-01-14 00:40:55" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 00:43:19" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:43:19" level=info key=startup
+time="2022-01-14 00:43:19" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 00:43:19" level=info msg="进程没有运行" key=startup
+time="2022-01-14 00:43:30" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:43:31" level=info key=startup
+time="2022-01-14 00:43:31" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 00:43:33" level=info msg="配置初始化成功..." key=startup
+time="2022-01-14 00:43:33" level=info msg="agent进程已经启动" key=startup
+time="2022-01-14 00:43:33" level=info msg="IP: 192.168.1.20" key=startup
+time="2022-01-14 00:43:33" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:43:33" level=info key=startup
+time="2022-01-14 00:43:33" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 00:44:33" level=info msg="[]" key=startup
+time="2022-01-14 00:44:33" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:45:33" level=info msg="[]" key=startup
+time="2022-01-14 00:45:33" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:46:33" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:46:33" level=info msg="[]" key=startup
+time="2022-01-14 00:47:33" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:47:33" level=info msg="[]" key=startup
+time="2022-01-14 00:48:33" level=info msg="[]" key=startup
+time="2022-01-14 00:48:33" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:49:33" level=info msg="[]" key=startup
+time="2022-01-14 00:49:33" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:50:33" level=info msg="[]" key=startup
+time="2022-01-14 00:50:33" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:51:33" level=info msg="[]" key=startup
+time="2022-01-14 00:51:33" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:52:33" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:52:33" level=info msg="[]" key=startup
+time="2022-01-14 00:53:24" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:53:24" level=info key=startup
+time="2022-01-14 00:53:24" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 00:53:24" level=info msg="进程没有运行" key=startup
+time="2022-01-14 00:53:33" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:53:33" level=info msg="[]" key=startup
+time="2022-01-14 00:53:46" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:53:46" level=info key=startup
+time="2022-01-14 00:53:46" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 00:53:48" level=info msg="配置初始化成功..." key=startup
+time="2022-01-14 00:53:48" level=info msg="agent进程已经启动" key=startup
+time="2022-01-14 00:53:48" level=info msg="IP: 192.168.1.20" key=startup
+time="2022-01-14 00:53:48" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 00:53:48" level=info key=startup
+time="2022-01-14 00:53:48" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 00:54:48" level=info msg="[]" key=startup
+time="2022-01-14 00:54:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:55:48" level=info msg="[]" key=startup
+time="2022-01-14 00:55:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:56:48" level=info msg="[]" key=startup
+time="2022-01-14 00:56:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:57:48" level=info msg="[]" key=startup
+time="2022-01-14 00:57:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:58:48" level=info msg="[]" key=startup
+time="2022-01-14 00:58:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:59:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 00:59:48" level=info msg="[]" key=startup
+time="2022-01-14 01:00:48" level=info msg="[]" key=startup
+time="2022-01-14 01:00:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:01:48" level=info msg="[]" key=startup
+time="2022-01-14 01:01:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:02:48" level=info msg="[]" key=startup
+time="2022-01-14 01:02:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:03:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:03:48" level=info msg="[]" key=startup
+time="2022-01-14 01:04:48" level=info msg="[]" key=startup
+time="2022-01-14 01:04:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:05:48" level=info msg="[]" key=startup
+time="2022-01-14 01:05:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:06:48" level=info msg="[]" key=startup
+time="2022-01-14 01:06:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:07:48" level=info msg="[]" key=startup
+time="2022-01-14 01:07:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:08:48" level=info msg="[]" key=startup
+time="2022-01-14 01:08:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:09:48" level=info msg="[]" key=startup
+time="2022-01-14 01:09:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:10:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:10:48" level=info msg="[]" key=startup
+time="2022-01-14 01:11:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:11:48" level=info msg="[]" key=startup
+time="2022-01-14 01:12:48" level=info msg="[]" key=startup
+time="2022-01-14 01:12:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:13:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:13:48" level=info msg="[]" key=startup
+time="2022-01-14 01:14:48" level=info msg="[<EndPoint:, Metric: sysinfo.innerip , Type: GAUGE, Tags: , Step: %!s(int64=0), Time:0, Value:192.168.1.20>]" key=startup
+time="2022-01-14 01:14:48" level=info msg="[]" key=startup
+time="2022-01-14 01:15:09" level=info msg="read config file:E:\\golang\\HelloGolang\\day14LuffyAgent/cfg.jsonsuccessfully" key=startup
+time="2022-01-14 01:15:09" level=info key=startup
+time="2022-01-14 01:15:09" level=info msg="当前ip地址为：192.168.1.20" key=startup
+time="2022-01-14 01:15:09" level=info msg=15564 key=startup

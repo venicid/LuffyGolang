@@ -1,6 +1,7 @@
 {
   "debug": true,
   "pid": "agentx.pid",
+  "ip": "",
   "logfile": "/var/run/agentx.log",
   "transfer": {
     "enabled": true,
