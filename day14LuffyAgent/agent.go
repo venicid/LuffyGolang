@@ -51,6 +51,9 @@ func main()  {
 		监控采集服务挂掉，不影响其他服务运行
 	*/
 	metrics.BuildMappers()
+
+
+
 	go cron.InitDataHistory()
 	cron.Collect()
 

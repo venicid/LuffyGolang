@@ -27,6 +27,19 @@ type CollectorConfig struct {
 	IfacePrefix []string `json:"iface_prefix"`
 }
 
+// agent健康检测
+type Heartbeat struct {
+	Enable bool `json:"enable"`
+	Addr []string `json:"addr"`
+}
+
+// 服务发现
+type Registrar struct {
+	Enabled bool `json:"enabled"`
+	Addr []string `json:"addr"`
+
+}
+
 type GlobalConfig struct {
 	Debug       bool               `json:"debug"`
 	Hostname    string             `json:"hostname"`
@@ -36,6 +49,8 @@ type GlobalConfig struct {
 	Transfer    *TransferConfig    `json:"transfer"`
 	Http        *HttpConfig        `json:"http"`
 	Collector   *CollectorConfig   `json:"collector"`
+	Heartbeat   *Heartbeat `json:"heartbeat"`
+	Registrar   *Registrar `json:"heartbeat"`
 }
 
 var (

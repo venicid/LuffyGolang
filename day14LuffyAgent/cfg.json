@@ -3,6 +3,10 @@
   "pid": "agentx.pid",
   "ip": "",
   "logfile": "/var/run/agentx.log",
+  "heartbeat": {
+    "enable": true,
+    "interval": 5
+  },
   "transfer": {
     "enabled": true,
     "addrs": [
@@ -10,6 +14,12 @@
     ],
     "interval": 60,
     "timeout": 1000
+  },
+  "registrar": {
+    "enabled": true,
+    "addrs": [
+      "0.0.0.0:2379"
+    ]
   },
   "http": {
     "listen": ":8080"
